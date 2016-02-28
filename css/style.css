@@ -1,0 +1,113 @@
+section{
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family: 'Dosis', sans-serif;
+}
+
+nav{
+	  font-family: 'Dosis', sans-serif;
+	  box-shadow: 0px 10px 0px 2px #EEE
+}
+
+.navbar-nav > *{
+	/*font-size: 18px;*/
+}
+
+.navbar-nav {
+	float: right;
+
+}
+
+.navbar-default {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.opaque {
+  opacity: 1;
+  transition: opacity .5s;
+}
+
+
+#intro{
+	background-image: url(../images/intro.jpg);
+	position: relative;
+
+
+}
+
+body{
+	height: 100%;
+}
+
+html{
+	height: 100%;
+	font-family:
+}
+
+.slogan{
+	color: #FFF;
+    text-shadow: 2px 0 2px #000;
+    padding-top: 13%;
+}
+
+#about >.container{
+	padding-top: 7%
+}
+
+.about-header{
+	height: 90px;
+	background-color: #AB0520;
+	width: 100%;
+}
+
+.about-header h2{
+	color: #FFF;
+	margin: 0;
+}
+
+
+#connect {
+	background: #AB0520;
+}
+#connedt .container {
+		padding-top: 7%;
+
+}
+
+section h2{
+	font-size: 60px;
+	text-align: center;
+}
+
+section h3{
+	padding-top: 7%;
+}
+
+section h4{
+	font-size: 24px;
+	text-align: center;
+}
+
+
+.col-header{
+	text-align: center;
+}
+
+.center-block{
+	display: table;
+	margin: 0 auto;
+}
+
+.aboutcontent{
+	text-align: center;
+    font-weight: 300;
+    font-size: 15.5px;
+    line-height: 1.25em;
+    margin: auto;
+    padding-top: 17px;
+    padding-bottom: 30px;
+}
