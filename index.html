@@ -6,13 +6,25 @@
         <title>Jarryd Goodman</title> 
         <meta charset="UTF-8"> 
 
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+		<link rel="icon" href="./favicon.ico" type="image/x-icon">
+
         <!-- Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+		<!-- My Stylesheet -->
 		<link rel="stylesheet" href="./css/style.css" type="text/css">
+
+		<!-- Fonts and JQuery -->
 		<link href="https://fonts.googleapis.com/css?family=Dosis:400,500" rel="stylesheet" type="text/css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+		<!-- My JS File -->
 		<script src="./js/main.js"></script>
+		<link rel="stylesheet" href="./js/font-awesome-animation.min.css">
+
 
 
     </head>
@@ -41,7 +53,7 @@
 					<div class="col-md-4"></div>
 					<div class="col-md-4">
 						<div class="row">
-							<div class="col-md-4"><a href="#about">About</a>
+							<div class="col-md-4"><a href="#about"></a>
 							<div class="col-md-4"></div>
 							<div class="col-md-4"></div>
 						</div>
@@ -57,15 +69,49 @@
 			<div class="container">
 				<h2>About Me</h2>
 				<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<img class="center-block" id="profilePicture" src="./images/profile.jpg">
+				</div>
+				<div class="col-md-4"></div>
+				</div>
+				
+				<div class="row">
+
+					<!-- EDUCATION -->
 					<div class="col-md-4">
 						<h3 class="col-header">Education</h3>
 						<div class="center-block">
 							<img src="./images/uofa.png" style="width:150px">
 						</div>
 						<p class="aboutcontent">
-							I just completed my Bachelors of Science in Computer Science
-							in December 2015, taking courses such as 
+							<h4>The University of Arizona</h4>
+							I completed my Bachelors of Science in Computer Science
+							in December 2015, taking courses such as compilers, algorithms/data structures,
+							database design, and computational linguistics.  Heavy object oriented focus, with
+							programs written mostly in Java or C. Bear down!
 						</p>
+					</div>
+
+					<!-- PROGRAMMING -->
+					<div class="col-md-4">
+						<h3 class="col-header">Projects</h3>
+							<div class="center-block">
+								<img src="images/iBeacon.png" style="width:150px">
+							</div>
+							<p class="aboutcontent">
+								<h4>Mobievent</h4>
+								I recently participated in a 36 hour hackathon where we decided to build an indoor
+								positioning system using iBeacon.  Having no experience with the technology (or stack we
+								used), it was an incredibly exciting learning experience where I felt like I was drinking from the firehose.
+								I led the design and implementation of the backend, building a Python/Flask API which handled basic functionality
+								as well as triangulation.  You can find the repo <a href="https://github.com/jarryd999/mobievent/">here</a>.
+							</p>
+					</div>
+
+					<!-- Music -->
+					<div class="col-md-4">
+						<h3 class="col-header">Music
 					</div>
 				</div>
 			</div>
@@ -75,9 +121,44 @@
 		<!-- Connect -->
 		<section id="connect">
 			<div class="slogan">
-			<h2><span class="text_color">Big Poop Daddy</span> </h2>
-			<h4>Betta Watch Out</h4>
-		</div>
+			<h2><span class="text_color">Let's get in touch!</span> </h2>
+			<div class="hr"></div>
+			<!-- Social Media Links -->
+			<!-- Github, facebook, insta, soundcloud -->
+			<div class="container" id="connectLinks">
+				<div class="row">
+					<div class="col-md-15 col-sm-3 connect-link-container">
+						<a id="github-sprite" class="connect-link faa-float faa-parent animated-hover" href="https://www.github.com/jarryd999">
+							<span class="fa fa-github fa-5x"/>
+						</a>
+					</div>
+					<div class="col-md-15 col-sm-3 connect-link-container">
+						<a class="connect-link faa-float faa-parent animated-hover" href="https://www.linkedin.com/in/jarrydgoodman">
+							<span class="fa fa-linkedin fa-5x"/>
+						</a>
+					</div>
+
+					<div class="col-md-15 col-sm-3 connect-link-container">
+						<a class="connect-link faa-float faa-parent animated-hover" href="mailto:Jarryd999@gmail.com">
+							<span class="fa fa-envelope fa-5x"/>
+						</a>
+					</div>
+
+					<div class="col-md-15 col-sm-3 connect-link-container">
+						<a class="connect-link faa-float faa-parent animated-hover" href="https://www.instagram.com/thegoodsman/">
+							<span class="fa fa-instagram fa-5x"/>
+						</a>
+					</div>
+
+					<div class="col-md-15 col-sm-3 connect-link-container">
+						<a class="connect-link faa-float faa-parent animated-hover" href="https://www.soundcloud.com/dubsessed/">
+							<span class="fa fa-soundcloud fa-5x"/>
+						</a>
+					</div>
+
+
+				</div>
+			</div>
 		</section>
     </body>
 

@@ -13,7 +13,7 @@ nav{
 }
 
 .navbar-nav > *{
-	/*font-size: 18px;*/
+	font-size: 20px;
 }
 
 .navbar-nav {
@@ -35,10 +35,21 @@ nav{
 #intro{
 	background-image: url(../images/intro.jpg);
 	position: relative;
-
-
 }
 
+@media (min-width: 768px) {
+	#intro{
+		background-size: 324%;
+    	background-position-x: 60%;
+    	padding-top: 300px;
+	}
+}
+@media (min-width: 992px){
+	#intro{
+		background-size: 100%;
+		padding-top: 20px;
+	}
+}
 body{
 	height: 100%;
 }
@@ -53,9 +64,13 @@ html{
     text-shadow: 2px 0 2px #000;
     padding-top: 13%;
 }
+.slogan h4{
+	font-size: 24px;
+	text-align: center;
+}
 
 #about >.container{
-	padding-top: 7%
+	padding-top: 40px;
 }
 
 .about-header{
@@ -84,13 +99,10 @@ section h2{
 }
 
 section h3{
-	padding-top: 7%;
+	padding-top: 20px;
 }
 
-section h4{
-	font-size: 24px;
-	text-align: center;
-}
+
 
 
 .col-header{
@@ -108,6 +120,84 @@ section h4{
     font-size: 15.5px;
     line-height: 1.25em;
     margin: auto;
-    padding-top: 17px;
     padding-bottom: 30px;
 }
+
+#profilePicture{
+	border-radius: 100%;
+
+}
+
+
+#connectLinks{
+	padding: 80px 10%;
+}
+
+#connectLinks .row {
+	margin: 0 10%;
+}
+
+
+.connect-link{
+	padding: 0 50px 10px 10px;
+    display: block;
+    color:	white;
+    height: 100px;
+}
+
+.connect-link:hover{
+	color: #FFF;
+	text-shadow: 2px 4px 4px #000;
+}
+
+.connect-link-container:hover{
+}
+
+
+/* 5 Column layout for contact media links*/
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 10%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+/* line divider */
+div.hr {
+	background: #fff  no-repeat scroll center;
+	margin: 0 auto;
+	max-width:55%;
+	min-width:45em;
+	height:2px;
+}
+
+div.hr hr {
+	display: none;
+}
+
