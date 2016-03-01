@@ -10,6 +10,7 @@ html, body{
 	margin-right: auto;
 }
 
+
 /*			   **
 ** PER SECTION **
 **			   */
@@ -174,6 +175,7 @@ nav{
 }
 
 .timeline-logo{
+	height: 40px;
     padding-bottom: 8px;
     margin-bottom: 4px;
 }
@@ -189,8 +191,46 @@ nav{
 	height : 20px;
 	width: 130px;
 }
-
-
+.resume-button{
+    background-color: #e14938;
+	box-shadow: 
+		inset 0 -.4em 0 hsla(0,0%,0%,.25);
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 175px;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+  	-moz-user-select: none;     /* Firefox all */
+  	-ms-user-select: none;      /* IE 10+ */
+  	user-select: none; 
+}
+.resume-button:active {
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.2),
+                inset 0 2px 0 hsla(0,0%,100%,.1),
+                inset 0 .25em .5em hsla(0,0%,0%,.05),
+                0 -1px 1px hsla(0,0%,0%,.1),
+                0 1px 1px hsla(0,0%,100%,.25);
+    margin-top: .25em;
+    outline: none;
+    padding-bottom: .5em;
+    transform:	translateY(5px);
+    -webkit-transition-duration: .3s;
+    -webkit-transform: translateY(5px);
+}
+.resume-button:hover{
+    background-color: #b8312f;;
+}
+.resume-button, .resume-button:visited, .resume-button:hover, .resume-button:active{
+    color: #fff!important;
+    text-decoration: none !important;
+}
 
 /*			**
 ** CONNECT  **
