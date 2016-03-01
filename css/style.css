@@ -1,3 +1,18 @@
+html, body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*			   **
+** PER SECTION **
+**			   */
 section{
 	width: 100%;
 	min-height: 100%;
@@ -7,14 +22,33 @@ section{
 	font-family: 'Dosis', sans-serif;
 }
 
+section h2{
+	font-size: 80px;
+	text-align: center;
+}
+section h3{
+	padding-top: 40px;
+}
+
+/*			**
+** NAV BAR  **
+**		    */
 nav{
 	  font-family: 'Dosis', sans-serif;
 	  box-shadow: 0px 10px 0px 2px #EEE;
 	  font-weight: 500;
+	  height: 60px;
 }
 
-.navbar-nav > *{
+.nav>li>a{
+	padding: 0 0 0 15px;
+}
+.navbar>.container{
+	margin-right: 0;
+}
+.navbar > *{
 	font-size: 20px;
+	padding-top: 20px;
 }
 
 .navbar-nav {
@@ -33,31 +67,13 @@ nav{
 }
 
 
+/*			**
+**	 INTRO  **
+**		    */
+
 #intro{
 	background-image: url(../images/intro.jpg);
 	position: relative;
-}
-
-@media (min-width: 768px) {
-	#intro{
-		background-size: 324%;
-    	background-position-x: 60%;
-    	padding-top: 300px;
-	}
-}
-@media (min-width: 992px){
-	#intro{
-		background-size: 100%;
-		padding-top: 20px;
-	}
-}
-body{
-	height: 100%;
-}
-
-html{
-	height: 100%;
-	font-family:
 }
 
 .slogan{
@@ -65,10 +81,17 @@ html{
     text-shadow: 2px 0 2px #000;
     padding-top: 13%;
 }
+
 .slogan h4{
 	font-size: 24px;
 	text-align: center;
 }
+
+
+
+/*			**
+**   ABOUT  **
+**		    */
 
 #about >.container{
 	padding-top: 40px;
@@ -84,28 +107,6 @@ html{
 	color: #FFF;
 	margin: 0;
 }
-
-
-#connect {
-	background: #AB0520;
-}
-#connedt .container {
-		padding-top: 7%;
-
-}
-
-section h2{
-	font-size: 60px;
-	text-align: center;
-}
-
-section h3{
-	padding-top: 20px;
-}
-
-
-
-
 .col-header{
 	text-align: center;
 }
@@ -114,7 +115,6 @@ section h3{
 	display: table;
 	margin: 0 auto;
 }
-
 #aboutContentRow{
 	padding-bottom: 60px;
 }
@@ -137,6 +137,75 @@ section h3{
 }
 
 
+/*			  **
+** EXPERIENCE **
+**		      */
+.experience-container {
+	max-width: 600px;
+}
+.work-timeline {
+    border-left: 6px solid #d0d2d3;
+    padding-left: -10px;
+    margin-top: 50px;
+}
+.timeline-circle {
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    position: relative;
+}
+.timeline-circle:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #d0d2d3;
+    background: #3d8eb9;
+    left: -53px;
+    top: 4px;
+}
+.timeline-info {
+    position: relative;
+    min-height: 100%;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    padding: 20px 20px 20px 40px;
+}
+
+.timeline-logo{
+    padding-bottom: 8px;
+    margin-bottom: 4px;
+}
+
+.timeline-icon{
+    display: inline-block;
+    height: 1.1em;
+    padding-right: 5px;
+    position: relative;
+    top: -2px;
+}
+#tuchLogo {
+	height : 20px;
+	width: 130px;
+}
+
+
+
+/*			**
+** CONNECT  **
+**		    */
+
+#connect {
+	background: #AB0520;
+}
+#connedt .container {
+	padding-top: 7%;
+
+}
 #connectLinks{
 	padding: 80px 10%;
 }
@@ -158,51 +227,53 @@ section h3{
 	text-shadow: 2px 4px 4px #000;
 }
 
-.connect-link-container:hover{
+.contacttable table{
+    table-layout: fixed;
+    width: 45%;
+    padding-top: 60px;
 }
 
 
-/* 5 Column layout for contact media links*/
-.col-xs-15,
-.col-sm-15,
-.col-md-15,
-.col-lg-15 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
 
-.col-xs-15 {
-    width: 20%;
-    float: left;
-}
-@media (min-width: 768px) {
-.col-sm-15 {
+/*	 			**
+**  RESPONSIVE  **
+**		    	*/ 
+@media (max-width: 768px) {
+	.col-sm-15 {
         width: 10%;
         float: left;
     }
-}
-@media (min-width: 992px) {
-    .col-md-15 {
-        width: 20%;
-        float: left;
-    }
-}
-@media (min-width: 1200px) {
-    .col-lg-15 {
-        width: 20%;
-        float: left;
-    }
+    #intro{
+		background-size: 354%;
+    	background-position-x: 56%;
+    	padding-top: 20px;
+	}
+	span.fa {
+		font-size: 3em;
+	}
+
+	.contacttable a{
+		padding: 0 7px;
+	}
+
+	.hr {
+		width: 75%;
+	}
+
+	.navbar {
+		display: none;
+	}
 }
 
-/* line divider */
+
+/*			**
+**  MISC 	**
+**		    */
 div.hr {
 	background: #fff  no-repeat scroll center;
 	margin: 0 auto;
 	margin-top: 20px;
 	max-width:55%;
-	min-width:45em;
 	height:2px;
 }
 
