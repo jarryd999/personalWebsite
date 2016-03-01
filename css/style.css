@@ -94,7 +94,7 @@ nav{
 **   ABOUT  **
 **		    */
 
-#about >.container{
+#about >.container:first-of-type{
 	padding-top: 40px;
 }
 
@@ -114,9 +114,6 @@ nav{
 .center-block{
 	display: table;
 	margin: 0 auto;
-}
-#aboutContentRow{
-	padding-bottom: 60px;
 }
 
 .abount-content-header{
@@ -139,6 +136,8 @@ nav{
 **		      */
 .experience-container {
 	max-width: 600px;
+	margin-bottom: 50px;
+	margin-top: 60px;
 }
 .work-timeline {
     border-left: 6px solid #d0d2d3;
