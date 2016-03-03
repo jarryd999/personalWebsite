@@ -178,6 +178,9 @@ nav{
     left: -53px;
     top: 4px;
 }
+.timeline-item{
+	margin-bottom: 10px;
+}
 .timeline-info {
     position: relative;
     min-height: 100%;
