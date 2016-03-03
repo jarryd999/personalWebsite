@@ -26,9 +26,18 @@ section{
 section h2{
 	font-size: 80px;
 	text-align: center;
+	cursor: default;
+	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none; 
 }
 section h3{
 	padding-top: 40px;
+	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none; 
 }
 
 /*			**
@@ -86,6 +95,10 @@ nav{
 .slogan h4{
 	font-size: 24px;
 	text-align: center;
+	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none; 
 }
 
 
@@ -104,8 +117,6 @@ nav{
 }
 #profilePicture{
 	border-radius: 100%;
-}
-.about-header h2{
 }
 .col-header{
 	text-align: center;
@@ -127,7 +138,9 @@ nav{
     line-height: 1.25em;
     margin: auto;
 }
+#uofa{
 
+}
 
 
 
