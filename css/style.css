@@ -137,6 +137,7 @@ nav{
     font-size: 15.5px;
     line-height: 1.25em;
     margin: auto;
+    max-width: 600px;
 }
 #uofa{
 
