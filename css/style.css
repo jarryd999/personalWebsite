@@ -88,6 +88,8 @@ nav{
 
 #intro{
 	background-image: url(../images/intro.jpg);
+	background-position: center center;
+	background-size: cover;
 	position: relative;
 	padding-top: 140px;
 	z-index: 40;
@@ -288,11 +290,12 @@ nav{
 	color: #FFF;
 	text-shadow: 2px 4px 4px #000;
 }
-
-.contacttable table{
-    table-layout: fixed;
-    width: 45%;
-    padding-top: 60px;
+.contacttable {
+	table-layout: fixed;
+	width: 65%;
+}
+.contacttable td {
+	width: 120px;
 }
 
 
@@ -320,7 +323,9 @@ nav{
 	.connect-link > span.fa {
 		font-size: 3em;
 	}
-
+	.contacttable{
+		width: auto;
+	}
 	.contacttable a{
 		padding: 0 7px;
 	}
