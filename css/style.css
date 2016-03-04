@@ -24,6 +24,8 @@ section{
 	background-repeat: no-repeat;
 	background-size: 100%;
 	font-family: 'Dosis', sans-serif;
+	padding: 80px 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.24),0 2px 15px 0 rgba(0,0,0,0.4);
 }
 
 section h2{
@@ -48,7 +50,7 @@ section h3{
 **		    */
 nav{
 	  font-family: 'Dosis', sans-serif;
-	  box-shadow: 0px 10px 0px 2px #EEE;
+	  box-shadow: 0px 10px 0px 2px #EEE, 0px 15px 8px rgba(0,0,0,.15);
 	  font-weight: 500;
 	  height: 60px;
 }
@@ -87,14 +89,17 @@ nav{
 #intro{
 	background-image: url(../images/intro.jpg);
 	position: relative;
+	padding-top: 140px;
+	z-index: 40;
 }
 
 .slogan{
 	color: #FFF;
-    text-shadow: 2px 0 2px #000;
-    padding-top: 13%;
+    text-shadow: 1px 2px 2px #000, 1px 1px 10px rgba(0,0,0,.15);
 }
-
+.slogan h2 {
+	margin-top: 0px;
+}
 .slogan h4{
 	font-size: 24px;
 	text-align: center;
@@ -110,9 +115,6 @@ nav{
 **   ABOUT  **
 **		    */
 
-#about .row:first-of-type{
-	padding: 80px 0;
-}
 
 .about-header{
 	max-width: 600px;
@@ -120,20 +122,30 @@ nav{
 }
 #profilePicture{
 	border-radius: 100%;
+	border: 4px white solid;
+	box-shadow: 0px 4px 15px 3px black;
 }
-
-
+#about a {
+	color: #e14938;
+}
+#aboutContentRow {
+	color: #090909;
+	background-color: #fcfcfc;
+	box-shadow: 1px 2px 10px 0 rgba(0,0,0,0.86),0 2px 18px 0 rgba(0,0,0,0.22) !important;
+	padding: 40px 30px 10px;
+	max-width: 700px;
+}
 .aboutContent{
-	font-family: "Open Sans", sans-serif;
-	text-indent: 20px;
-	text-align: left;
-    font-size: 16.5px;
+	text-align: center;
+    font-size: 17.5px;
     line-height: 1.25em;
-    margin: auto;
-    max-width: 700px;
+    font-weight: 500;
+    margin-bottom: 30px;
 }
-#uofa{
-
+#about{
+	background-color: rgb(24, 84, 155);
+	color: white;
+	z-index: 20;
 }
 
 
@@ -141,15 +153,20 @@ nav{
 /*			  **
 ** EXPERIENCE **
 **		      */
+#timeline{
+	z-index: 10;
+}
 .experience-container {
-	max-width: 600px;
-	margin-bottom: 50px;
-	margin-top: 60px;
+	max-width: 630px;
+	padding: 0 45px 50px;
+	background-color: #fcfcfc;
+	box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.56),2px 2px 18px 0 rgba(0,0,0,0.12) !important;
+
 }
 .work-timeline {
     border-left: 6px solid #d0d2d3;
     padding-left: -10px;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 20px;
 }
 .timeline-circle {
@@ -344,6 +361,7 @@ div.hr {
 	background: #fff  no-repeat scroll center;
 	margin: 0 auto;
 	margin-top: 20px;
+	margin-bottom: 50px;
 	max-width:55%;
 	height:2px;
 }
